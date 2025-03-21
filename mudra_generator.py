@@ -23,7 +23,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 BATCH_SIZE = 16 if torch.cuda.is_available() else 4
 DATASET_PATH = "dataset"
 FEATURES_FILE = "mudra_latents.pkl"
-IMAGES_PER_GENERATION = 10  # Number of images to generate per click
+IMAGES_PER_GENERATION = 4  # Number of images to generate per click
 
 class OptimizedMudraDataset(Dataset):
     def __init__(self, root_dir):
